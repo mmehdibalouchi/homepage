@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix Project</title>
+    <script src="../../js/matrix.js"></script>
+</head>
+
+<body>
+<style>
+    html{
+        background: #b7b9ba;
+    }
+    .input{
+        text-align: center;
+        margin: 50px;
+    }
+    .input input{
+        padding: 5px 0;
+        width: 50px;
+        text-align: center;
+    }
+     button{
+        padding: 7px;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        background: cadetblue;
+    }
+    #matrix input{
+        width: 100%;
+        border: 0;
+        outline: none;
+    }
+    #matrixtable{
+        text-align: center;
+    }
+
+    table{
+        display: inline-table;
+        border-collapse: collapse;
+        margin: 10px 0;
+    }
+    table td{
+
+        width: 50px;
+        text-align: center;
+    }
+    #matrix-table td input{
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    #Umatrix-table td, #Lmatrix-table td{
+        padding: 5px;
+        box-sizing: border-box;
+        color: #4a2f2f;
+    }
+    #Umatrix-table tr:nth-child(even){
+        background-color: #9bf0f2;
+    }
+    #Umatrix-table tr:nth-child(odd){
+        background-color: #5af2ea;
+    }
+    #Lmatrix-table tr:nth-child(even){
+        background-color: #f2d0df;
+    }
+    #Lmatrix-table tr:nth-child(odd){
+        background-color: #f287ab;
+    }
+
+    #matrix-table tr:nth-child(even) input{
+        background: #f2f2f2;
+    }
+    #matrix-table tr:nth-child(odd) input{
+        background: white;
+    }
+
+     .label{
+        padding: 10px;
+        color: darkcyan;
+        font-weight: 600;
+    }
+
+</style>
+<div class="input">
+    <input id="dimention" type="number">
+    <button onclick="generateTable()">Make a matrix</button>
+</div>
+
+<div style="text-align: center">
+<div id="matrix">
+</div>
+<div id="Lmatrix">
+</div>
+<div id="Umatrix">
+</div>
+</div>
+</body>
+
+</html>
